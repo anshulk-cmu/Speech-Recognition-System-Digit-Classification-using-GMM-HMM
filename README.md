@@ -315,19 +315,6 @@ Final Training Accuracy: 96.9%
 | **Prediction Speed** | ~33 samples/second |
 | **Convergence** | Stabilizes after epoch 2-3 |
 
-### Training Dynamics
-
-```
-Accuracy by Epoch:
-100% ┤                              ╭──────╮
- 95% ┤         ╭────────────────────╯      ╰─
- 90% ┤    ╭────╯
- 85% ┤────╯
- 80% ┤
-     └────┬────┬────┬────┬────┬────┬
-        Init  E0   E1   E2   E3   E4
-```
-
 **Observations:**
 - Rapid improvement in first epoch (+3.95%)
 - Steady improvement through epochs 1-3
