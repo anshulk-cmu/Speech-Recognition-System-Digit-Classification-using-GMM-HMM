@@ -16,7 +16,7 @@ A complete implementation of a speech recognition system for spoken digit classi
 
 ## Overview
 
-This project implements a **statistical speech recognition system** from scratch, capable of recognizing spoken digits with **96.5% accuracy** on training data. The system uses:
+This project implements a **statistical speech recognition system** from scratch, capable of recognizing spoken digits with **96.9% accuracy** on training data. The system uses:
 
 - **Hidden Markov Models (HMM)** for temporal modeling of speech
 - **Gaussian Mixture Models (GMM)** for acoustic feature modeling
@@ -293,27 +293,27 @@ $ python submit.py
 Loading data...
 Start training!
 
-Initial accuracy (equal alignment):  87.9%
+Initial accuracy (equal alignment):  91.15%
 
-Epoch 0:  95.6% accuracy  (+7.7%)
-Epoch 1:  96.65% accuracy (+1.05%)
-Epoch 2:  96.45% accuracy (-0.2%)
-Epoch 3:  96.75% accuracy (+0.3%)
-Epoch 4:  96.5% accuracy  (-0.25%)
+Epoch 0:  95.1% accuracy  (+3.95%)
+Epoch 1:  95.9% accuracy  (+0.8%)
+Epoch 2:  96.6% accuracy  (+0.7%)
+Epoch 3:  96.9% accuracy  (+0.3%)
+Epoch 4:  96.75% accuracy (-0.15%)
 
-Final Training Accuracy: 96.5%
+Final Training Accuracy: 96.9%
 ```
 
 ### Performance Metrics
 
 | Metric | Value |
 |--------|-------|
-| **Initial Accuracy** | 87.9% |
-| **Final Training Accuracy** | 96.5% |
-| **Improvement** | +8.6% |
+| **Initial Accuracy** | 91.15% |
+| **Final Training Accuracy** | 96.9% |
+| **Improvement** | +5.75% |
 | **Training Time** | ~6 minutes (5 epochs) |
 | **Prediction Speed** | ~33 samples/second |
-| **Convergence** | Stabilizes after epoch 1 |
+| **Convergence** | Stabilizes after epoch 2-3 |
 
 ### Training Dynamics
 
@@ -329,8 +329,9 @@ Accuracy by Epoch:
 ```
 
 **Observations:**
-- Rapid improvement in first epoch (+7.7%)
-- Convergence around epoch 1
+- Rapid improvement in first epoch (+3.95%)
+- Steady improvement through epochs 1-3
+- Convergence around epoch 3
 - Minor fluctuations due to EM local optima
 - No overfitting observed (stable accuracy)
 

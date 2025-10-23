@@ -42,7 +42,7 @@ class DiagGMM:
         self.log_weight = np.log(np.ones(self.component_size)/self.component_size)
 
         # you can use kmeans to do the initialize the model
-        kmeans_cluster = KMeans(n_clusters=self.component_size)
+        kmeans_cluster = KMeans(n_clusters=self.component_size, random_state=0)
 
         sample_size = X.shape[0]
 
