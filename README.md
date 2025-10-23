@@ -352,7 +352,7 @@ Accuracy by Epoch:
 
 ```bash
 # Clone repository
-git clone <repository-url>
+git clone https://github.com/anshulk-cmu/Speech-Recognition-System-Digit-Classification-using-GMM-HMM.git
 cd coding2
 
 # Install dependencies
@@ -397,9 +397,14 @@ num_epoch = 5           # Training iterations
 
 **Predictions saved to:** `test.txt`
 ```
-file001.npy 3
-file002.npy 7
-file003.npy 0
+2000.data 2
+2001.data 7
+2002.data 2
+2003.data 9
+2004.data 4
+2005.data 3
+2006.data 8
+2007.data 4
 ...
 ```
 
@@ -565,22 +570,6 @@ tqdm>=4.50.0            # Progress bars
 ```
 
 **Python Version:** 3.7+
-
----
-
-## References
-
-### Classical Speech Recognition
-- Rabiner, L. R. (1989). "A tutorial on hidden Markov models"
-- Young, S. et al. (2006). "The HTK Book" (Cambridge University)
-
-### EM Algorithm
-- Dempster, A. P., et al. (1977). "Maximum likelihood from incomplete data via the EM algorithm"
-- Bishop, C. M. (2006). "Pattern Recognition and Machine Learning"
-
-### Viterbi Algorithm
-- Viterbi, A. (1967). "Error bounds for convolutional codes"
-- Forney, G. D. (1973). "The Viterbi algorithm"
 
 ---
 
