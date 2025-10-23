@@ -1,0 +1,46 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# PDF files
+*.pdf
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# PyCharm
+*.iml
+.idea/
